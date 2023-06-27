@@ -13,8 +13,8 @@ const AddModalEngineer = () => {
 
   const formModal = yup.object().shape({
     name: yup.string().required("campo obrigatório"),
-    CPF: yup.string().required("campo obrigatório"),
-    CREA: yup.string().required("campo obrigatório"),
+    cpf: yup.string().required("campo obrigatório"),
+    crea: yup.string().required("campo obrigatório"),
     cellphone: yup.string().required("campo obrigatório"),
     email: yup.string().email("email inválido").required("campo obrigatório"),
   });
@@ -49,23 +49,23 @@ const AddModalEngineer = () => {
           />
           <p>{errors.name?.message}</p>
 
-          <label htmlFor="CPF">CPF*</label>
+          <label htmlFor="cpf">CPF*</label>
           <input
             type="text"
             id="CPF"
             placeholder="000.000.000-00"
-            {...register("CPF")}
+            {...register("cpf")}
           />
-          <p>{errors.CPF?.message}</p>
+          <p>{errors.cpf?.message}</p>
 
           <label htmlFor="CREA">CREA*</label>
           <input
             type="text"
             id="CREA"
             placeholder="Digite seu CREA"
-            {...register("CREA")}
+            {...register("crea")}
           />
-          <p>{errors.CREA?.message}</p>
+          <p>{errors.crea?.message}</p>
 
           <label htmlFor="cellphone">Telefone*</label>
           <input

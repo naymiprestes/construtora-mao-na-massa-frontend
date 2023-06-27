@@ -40,8 +40,8 @@ interface IEngineer {
 
 export interface IRegisterEngineer {
   name: string;
-  CPF: string;
-  CREA: string;
+  cpf: string;
+  crea: string;
   cellphone: string;
   email: string;
 }
@@ -84,10 +84,10 @@ const EngineerProvider = ({ children }: IProviderChildren) => {
   }, []);
 
   const registerEngineer = (data: IRegisterEngineer) => {
-    console.log(data, "data");
     api
       .post("/engineers", data)
       .then((response) => {
+        refreshEngineers();
         setAddModalEngineer(false);
         toast.success("engenheiro cadastrado com sucesso!");
         navigate("/engineers", { replace: true });
@@ -102,11 +102,10 @@ const EngineerProvider = ({ children }: IProviderChildren) => {
     await api
       .patch(`/engineers/${idEngineer?.id}`, data)
       .then((response) => {
-        console.log(response, "edit");
         refreshEngineers();
         setIdEngineer(response.data);
         setEditModalEngineer(false);
-        toast.success("engenheiro atualizado com sucesso");
+        toast.success("atualizado com sucesso");
       })
       .catch((err) => {
         toast.error("erro ao atualizar engenheiro");

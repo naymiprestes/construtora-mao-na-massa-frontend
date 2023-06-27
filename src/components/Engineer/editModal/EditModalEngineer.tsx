@@ -3,15 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { DivModal, Form } from "./style";
 import { useContext } from "react";
-import { EngineerContext } from "../../../context/EngineerContext";
-
-interface IEngineerEdit {
-  name: string;
-  CPF: string;
-  CREA: string;
-  cellphone: string;
-  email: string;
-}
+import { EngineerContext, IHandleEdit } from "../../../context/EngineerContext";
 
 const EditModalEngineer = () => {
   const { setEditModalEngineer, handleEdit, idEngineer } =
@@ -19,13 +11,13 @@ const EditModalEngineer = () => {
 
   const formModal = yup.object().shape({
     name: yup.string().optional(),
-    CPF: yup.string().optional(),
-    CREA: yup.string().optional(),
+    cpf: yup.string().optional(),
+    crea: yup.string().optional(),
     cellphone: yup.string().optional(),
     email: yup.string().email("email inválido").optional(),
   });
 
-  const { register, handleSubmit } = useForm<IEngineerEdit | any>({
+  const { register, handleSubmit } = useForm<IHandleEdit | any>({
     resolver: yupResolver(formModal),
   });
 
@@ -55,7 +47,7 @@ const EditModalEngineer = () => {
           <input
             type="text"
             id="CPF"
-            {...register("CPF")}
+            {...register("cpf")}
             defaultValue={idEngineer?.CPF}
           />
 
@@ -63,7 +55,7 @@ const EditModalEngineer = () => {
           <input
             type="text"
             id="CREA"
-            {...register("CREA")}
+            {...register("crea")}
             defaultValue={idEngineer?.CREA}
           />
 
