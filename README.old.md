@@ -1,6 +1,6 @@
 # Construtora mão na massa
 
-A construtora poderá registrar os projetos de construção de casas.
+A construtora poderá registrar os projetos de construção de casas
 
 ## Rodando localmente
 
