@@ -53,7 +53,7 @@ const AddModalMaterials = () => {
 
           <label htmlFor="status">Unidade de Medida *</label>
           <select id="status" {...register("unitMeasurement")}>
-            <option value="vazio">selecione unidade</option>
+            <option value="">selecione unidade</option>
             <option value="unidade">Unidade</option>
             <option value="caixa">Caixa</option>
             <option value="milheiro">Milheiro</option>

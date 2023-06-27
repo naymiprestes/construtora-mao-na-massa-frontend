@@ -58,7 +58,7 @@ const EditModalMaterials = () => {
 
           <label htmlFor="status">Unidade de Medida</label>
           <select id="status" {...register("unitMeasurement")}>
-            <option value="vazio">{idMaterials?.unitMeasurement}</option>
+            <option value="">{idMaterials?.unitMeasurement}</option>
             <option value="unidade">Unidade</option>
             <option value="caixa">Caixa</option>
             <option value="milheiro">Milheiro</option>
@@ -66,9 +66,7 @@ const EditModalMaterials = () => {
             <option value="litro">Litro</option>
           </select>
 
-          <button className="registerEngineer" type="submit">
-            Salvar Alterações
-          </button>
+          <button className="registerEngineer">Salvar Alterações</button>
         </Form>
       </div>
     </DivModal>
