@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import EngineerProvider from "./context/EngineerContext";
 import MaterialsProvider from "./context/MaterialsContext";
+import ProjectsProvider from "./context/ProjectsContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,19 +16,21 @@ root.render(
     <BrowserRouter>
       <EngineerProvider>
         <MaterialsProvider>
-          <ToastContainer
-            position="top-right"
-            autoClose={4000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-          />
-          <App />
+          <ProjectsProvider>
+            <ToastContainer
+              position="top-right"
+              autoClose={4000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+            <App />
+          </ProjectsProvider>
         </MaterialsProvider>
       </EngineerProvider>
     </BrowserRouter>

@@ -23,7 +23,7 @@ export const DivModal = styled.div`
 
     gap: 16px;
 
-    background-color: #121214;
+    background-color: var(--grey0);
     box-shadow: 0px 4px 32px -8px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
   }
@@ -36,12 +36,11 @@ export const DivModal = styled.div`
   }
 
   .buttonModal {
-    font-size: 1rem;
-    background: var(--yellow4);
+    font-size: 1.2rem;
+    background: var(--grey0);
     border: none;
-    color: var(--grey0);
-    padding: 8px;
-    border-radius: 60%;
+    color: var(--whiteFixed);
+    padding: 8px 8px 0px 0px;
   }
 `;
 

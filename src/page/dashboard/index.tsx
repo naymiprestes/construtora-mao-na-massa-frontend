@@ -13,7 +13,7 @@ const Dashboard = () => {
         <Link to={"/materials"} className="materials">
           Catalogo de Materias
         </Link>
-        <Link to={"/construction-projects"} className="construction-project">
+        <Link to={"/new-projects"} className="construction-project">
           Construção de Projetos
         </Link>
       </Div>

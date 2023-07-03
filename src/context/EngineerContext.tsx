@@ -29,7 +29,7 @@ interface IEngineerProps {
   handleDelete: () => void;
 }
 
-interface IEngineer {
+export interface IEngineer {
   id: string;
   name: string;
   CPF: string;

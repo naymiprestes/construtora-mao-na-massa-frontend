@@ -44,8 +44,7 @@ export const DivModal = styled.div`
     border-radius: 4px 4px 0px 0px;
   }
 
-  .addEngineer {
-    font-weight: 700;
+  .addListMaterial {
     font-size: 0.9rem;
   }
 
@@ -67,9 +66,8 @@ export const Form = styled.form`
 
   input {
     border: none;
-    margin-bottom: 14px;
     font-size: 0.8rem;
-    opacity: 60%;
+    margin-bottom: 10px;
 
     width: 240px;
     height: 38px;
@@ -81,16 +79,40 @@ export const Form = styled.form`
     margin-bottom: 10px;
   }
 
-  .registerEngineer {
+  p {
+    font-weight: 600;
+    font-size: 0.6rem;
+
+    margin-bottom: 26px;
+    line-height: 0px;
+    color: #b42529;
+  }
+
+  select {
     width: 240px;
     height: 38px;
+    margin-bottom: 14px;
 
+    border: none;
+    font-size: 0.8rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 6px 0px;
+  }
+
+  .registerMaterial {
+    width: 240px;
+    height: 38px;
     font-weight: 700;
     font-size: 0.9rem;
+    margin-top: 20px;
     background-color: var(--yellow4);
   }
 
-  .registerEngineer:hover {
+  .registerMaterial:hover {
     background-color: var(--yellow4);
     border: 1px solid var(--whiteFixed);
     opacity: 60%;

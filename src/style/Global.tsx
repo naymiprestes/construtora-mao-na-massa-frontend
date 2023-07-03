@@ -27,7 +27,8 @@ const GlobalStyle = createGlobalStyle`
   --yellow6: #e8ae3a;
   --yellow7: #b5882d;
   --yellow8: #8c6923;
-  --yellow9: #6b501b;
+  --yellow9: #FDE8C2;
+
 
   // typogrady
 

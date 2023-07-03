@@ -21,18 +21,19 @@ const Engineer = () => {
   return (
     <>
       <DivEngineer>
-        <h2>Engenheiros</h2>
-
-        <div className="register-back">
-          <button
-            className="register"
-            onClick={() => setAddModalEngineer(true)}
-          >
-            Cadastrar
-          </button>
-          <Link to={"/"} className="back">
-            Voltar
-          </Link>
+        <div className="header">
+          <h2>Engenheiros</h2>
+          <div className="button-back-engineers">
+            <button
+              className="button-engineers"
+              onClick={() => setAddModalEngineer(true)}
+            >
+              Cadastrar
+            </button>
+            <Link to={"/"} className="button-back">
+              Inicio
+            </Link>
+          </div>
         </div>
       </DivEngineer>
 

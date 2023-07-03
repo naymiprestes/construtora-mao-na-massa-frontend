@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 
   height: 100vh;
 
@@ -13,10 +14,10 @@ export const Container = styled.div`
   background-position: center;
 
   h1 {
-    font-size: 4rem;
-    text-align: center;
-    text-decoration: underline;
-    padding: 10vh;
+    font-size: 3rem;
+    background-color: #212529c7;
+    padding: 10px;
+    border-radius: 8px;
   }
 `;
 

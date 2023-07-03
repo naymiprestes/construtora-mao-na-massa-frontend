@@ -1,55 +1,47 @@
 import styled from "styled-components";
 
 export const DivMaterials = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-
   h2 {
     font-size: 2rem;
-    border-bottom: 2px solid var(--yellow4);
-    width: 100vw;
   }
 
-  .register-back-materials {
+  .header {
     display: flex;
-    justify-content: space-around;
-    margin: 40px;
+    justify-content: space-between;
+    margin: 20px 40px 40px 40px;
+    border-bottom: 1px solid var(--yellow4);
   }
 
-  .registerMaterials,
-  .back {
-    width: 160px;
-    height: 40px;
-
-    background-color: var(--grey0);
-    border: 1px solid var(--whiteFixed);
-    color: var(--whiteFixed);
-    font-size: 1rem;
+  .button-back-materials {
+    display: flex;
+    gap: 40px;
+    margin: 0px 40px;
   }
 
-  .registerMaterials:hover,
-  .back:hover {
-    background-color: var(--yellow4);
-    color: var(--grey1);
-    opacity: 60%;
-  }
+  .button-back,
+  .button-materials {
+    width: 120px;
+    margin: 6px 0px;
+    padding: 8px;
 
-  .back {
-    text-align: center;
     text-decoration: none;
-    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--grey0);
+
     border-radius: 4px;
+    background-color: var(--yellow4);
   }
 `;
 
 export const Div = styled.div`
+  margin-top: 60px;
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
-    margin: 0px 100px 20px 100px;
+    gap: 60px;
+    margin: 0px 116px;
   }
 
   h3 {
@@ -58,10 +50,12 @@ export const Div = styled.div`
     color: var(--grey1);
     border-radius: 8px 8px 0px 0px;
     padding: 10px;
+    text-transform: capitalize;
   }
 
   p {
     margin: 14px;
+    text-transform: capitalize;
   }
 
   li {
@@ -69,7 +63,7 @@ export const Div = styled.div`
     flex-direction: column;
 
     list-style: none;
-    line-height: 26px;
+    line-height: 20px;
     font-size: 1rem;
     border: 1px solid var(--whiteFixed);
     border-radius: 8px;
@@ -88,7 +82,7 @@ export const ButtonMaterials = styled.div`
     height: 40px;
 
     background-color: var(--grey0);
-    border: 1px solid var(--whiteFixed);
+    border: 1px solid var(--grey2);
     color: var(--whiteFixed);
     font-size: 1rem;
   }

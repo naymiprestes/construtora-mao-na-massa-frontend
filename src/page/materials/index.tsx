@@ -21,18 +21,19 @@ const Materials = () => {
   return (
     <>
       <DivMaterials>
-        <h2>Catálogo de Materiais</h2>
-
-        <div className="register-back-materials">
-          <button
-            className="registerMaterials"
-            onClick={() => setAddModalMaterials(true)}
-          >
-            Cadastrar
-          </button>
-          <Link to={"/"} className="back">
-            Voltar
-          </Link>
+        <div className="header">
+          <h2>Catálogo de Materiais</h2>
+          <div className="button-back-materials">
+            <button
+              className="button-materials"
+              onClick={() => setAddModalMaterials(true)}
+            >
+              Cadastrar
+            </button>
+            <Link to={"/"} className="button-back">
+              Inicio
+            </Link>
+          </div>
         </div>
       </DivMaterials>
 
@@ -42,7 +43,7 @@ const Materials = () => {
             {materials.map((material) => (
               <li key={material?.id}>
                 <h3> {material?.description}</h3>
-                <p>Un de Medida: {material?.unitMeasurement}</p>
+                <p>Und. de Medida: {material?.unitMeasurement}</p>
                 <p>Valor: {material?.value}</p>
 
                 <ButtonMaterials>
